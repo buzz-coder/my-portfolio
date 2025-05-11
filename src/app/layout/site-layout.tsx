@@ -19,13 +19,13 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
           <h1 className="text-2xl font-bold">Manishkumar</h1>
           <nav className="space-y-2">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className="block text-sm hover:text-blue-400 transition"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
         </div>
